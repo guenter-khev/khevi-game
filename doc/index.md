@@ -1,34 +1,48 @@
 ---
 layout: default
-title: Khevi Game Dokumentation
+title: Khevi Game Entwickler Dokumentation
 author: 6R 2026 und Prof. Öller
 ---
 
-# Projekt-MitarbeiterIn
+# 📖 Khevi Game — Entwickler-Dokumentation
 
-## Installation der IDE (Entwicklungsumgebung)
+Willkommen! Diese Dokumentation begleitet dich von der **ersten Installation** bis zur **täglichen Arbeit am Spiel**.
 
-1. Ordern c:/github erstellen
-2. VS Code installieren ... immer "default" OK
-3. Git for Windows installieren ... immer "default" OK
-4. VS Code / Versionierung / Github Projekt "khevi-game" checkout
-5. VS Code / Terminal / Git user.name und user.email festlegen:
-```terminal
-git config --global user.name "Vorname Nachname"
-git config --global user.email "deine@email.com"
-git config --global --list
+---
+
+## 🗂 Struktur der Dokumentation
+
 ```
-Beispiel:
-```terminal
-git config --global user.name "Prof. Öller"
-git config --global user.email "guenter.oeller@khev.at"
-git config --global --list
+doc/
+├── onboarding/     ← Einstieg: IDE, Git, Projekt-Setup
+├── workflow/       ← Tägliche Arbeit: Branches, Commits, PRs
+├── architektur/    ← Aufbau des Spiels: Code, Module, Tech-Stack
+├── entwicklung/    ← Coding-Richtlinien, Tests, Debugging
+└── medien/         ← Grafiken, Sounds, Assets einbinden
 ```
 
-Die korrekte Ausgabe ist dann: 
-```terminal
-core.editor="C:\Users\guent\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
-user.name=Prof. Öller
-user.email=guenter.oeller@khev.at
-```
+---
 
+## 📚 Bereiche im Überblick
+
+| # | Bereich | Inhalt | Status |
+|---|---|---|---|
+| 1 | [🚀 Onboarding](onboarding/index.md) | IDE einrichten, Git installieren, Projekt klonen, Copilot + Claude in VS Code | ✅ fertig |
+| 2 | [🔄 Workflow](workflow/index.md) | Branches, Commits, Pull Requests, Code Review | 🚧 in Arbeit |
+| 3 | [🏗 Architektur](architektur/index.md) | Projektstruktur, Tech-Stack, Spiel-Schleife | 🚧 in Arbeit |
+| 4 | [💻 Entwicklung](entwicklung/index.md) | Code-Style, Tests, Debugging, Konventionen | 🚧 in Arbeit |
+| 5 | [🎨 Medien](medien/index.md) | Bilder, Sounds, Schriften, Asset-Pipeline | 🚧 in Arbeit |
+
+---
+
+## 🎯 Wo soll ich starten?
+
+- **Neu im Team?** → Beginne mit [Onboarding](onboarding/index.md)
+- **Setup fertig, jetzt arbeiten?** → Schau in [Workflow](workflow/index.md)
+- **Code verstehen?** → [Architektur](architektur/index.md) erklärt den Aufbau
+- **Sauber programmieren?** → [Entwicklung](entwicklung/index.md) zeigt unsere Regeln
+- **Asset einbauen?** → [Medien](medien/index.md) hilft dir weiter
+
+---
+
+*Autor: 6R 2026 und Prof. Öller*
