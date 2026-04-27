@@ -1,3 +1,9 @@
+---
+layout: default
+title: Khevi Game Dokumentation
+author: 6R 2026 und Prof. Öller
+---
+
 # Projekt-MitarbeiterIn
 
 ## Installation der IDE (Entwicklungsumgebung)
