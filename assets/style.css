@@ -1,0 +1,138 @@
+/* Khevi-Game Dokumentation — minimal layout */
+
+:root {
+  --khev-blue: #1d4d8a;
+  --khev-orange: #E06614;
+  --bg: #fdfdfd;
+  --text: #222;
+  --muted: #666;
+  --border: #e1e4e8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Verdana, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+/* School bar */
+.school-bar {
+  background: var(--khev-blue);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.school-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.school-bar a:hover { text-decoration: underline; }
+.school-bar img { height: 20px; vertical-align: middle; }
+.school-bar .sep { color: rgba(255,255,255,0.5); }
+
+/* Project header */
+.project-header {
+  border-bottom: 3px solid var(--khev-orange);
+  padding: 1.2rem 1rem 0.8rem;
+  background: #fff;
+}
+.project-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--khev-blue);
+}
+.project-header .subtitle {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+/* Nav */
+nav {
+  padding: 0.4rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: #f6f8fa;
+}
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+nav a { color: var(--khev-blue); text-decoration: none; font-size: 0.9rem; }
+nav a:hover { text-decoration: underline; }
+
+/* Main content */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+main a { color: var(--khev-blue); }
+main h1, main h2, main h3 { color: var(--khev-blue); }
+main code { background: #f3f4f6; padding: 0.1em 0.3em; border-radius: 3px; font-size: 0.9em; }
+main pre { background: #f3f4f6; padding: 0.8rem; border-radius: 4px; overflow-x: auto; }
+main pre code { background: transparent; padding: 0; }
+main table { border-collapse: collapse; width: 100%; }
+main th, main td { border: 1px solid var(--border); padding: 0.4rem 0.6rem; text-align: left; }
+main th { background: #f6f8fa; }
+
+/* Hero (Startseite) */
+.hero {
+  background: linear-gradient(135deg, var(--khev-blue), #2a6bb8);
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+.hero h1 { color: #fff; margin: 0 0 0.4rem; font-size: 1.8rem; }
+.hero p { margin: 0; opacity: 0.92; }
+
+/* Spiele-Grid */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+.game-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  background: #fff;
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.game-card:hover { border-color: var(--khev-orange); transform: translateY(-2px); }
+.game-card.coming-soon { opacity: 0.55; pointer-events: none; }
+.game-card .icon { font-size: 1.8rem; }
+.game-card .name { font-weight: 600; color: var(--khev-blue); }
+.game-card .desc { font-size: 0.85rem; color: var(--muted); }
+.game-card .badge {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  background: var(--khev-orange);
+  color: #fff;
+  text-transform: uppercase;
+}
+.game-card .badge.soon { background: var(--muted); }
+
+/* Footer */
+.school-footer {
+  border-top: 1px solid var(--border);
+  background: #f6f8fa;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+.school-footer a { color: var(--khev-blue); }

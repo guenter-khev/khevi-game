@@ -1,12 +1,55 @@
 ---
 layout: default
-title: Khevi Game Home
+title: Startseite
 author: 6R 2026 und Prof. Öller
 ---
 
-<h1>{{ page.title }}</h1>
-<h2>{{ page.author }}</h2>
-<p>Hier wird die Seite {{ page.title }} entstehen.</p>
+<section class="hero">
+  <h1>🎮 Khevi-Game</h1>
+  <p>Die Spielesammlung der 6R — ein Browser-Game-Hub mit vielen Mini-Spielen, gemeinsam entwickelt im Informatik-Unterricht.</p>
+</section>
+
+<h2>🕹 Spiele</h2>
+<p>Wähle ein Spiel aus der Sammlung. Neue Spiele kommen laufend dazu.</p>
+
+<div class="game-grid">
+  <a class="game-card coming-soon" href="#">
+    <span class="icon">🐍</span>
+    <span class="name">Snake</span>
+    <span class="desc">Der Klassiker — sammle Punkte, werde länger.</span>
+    <span class="badge soon">Coming soon</span>
+  </a>
+
+  <a class="game-card coming-soon" href="#">
+    <span class="icon">🧠</span>
+    <span class="name">Memory</span>
+    <span class="desc">Finde die Pärchen. Wer hat das beste Gedächtnis?</span>
+    <span class="badge soon">Coming soon</span>
+  </a>
+
+  <a class="game-card coming-soon" href="#">
+    <span class="icon">🚀</span>
+    <span class="name">Space Shooter</span>
+    <span class="desc">Verteidige die Galaxie gegen Asteroiden.</span>
+    <span class="badge soon">Coming soon</span>
+  </a>
+
+  <a class="game-card coming-soon" href="#">
+    <span class="icon">❓</span>
+    <span class="name">Quiz</span>
+    <span class="desc">Wie viel weißt du wirklich?</span>
+    <span class="badge soon">Coming soon</span>
+  </a>
+</div>
+
+<h2>📖 Für Entwickler</h2>
+<p>Du arbeitest am Projekt mit? Diese Seiten helfen dir beim Einstieg:</p>
+
 <ul>
-    <li><a href="./doc/index.html">Dokumentation</a> </li>
+  <li><a href="./doc/index.html">Dokumentation — Übersicht</a></li>
+  <li><a href="./doc/onboarding/index.html">🚀 Onboarding (IDE einrichten)</a></li>
+  <li><a href="https://github.com/guenter-khev/khevi-game" target="_blank" rel="noopener">GitHub-Repository</a></li>
 </ul>
+
+<h2>📦 Neues Spiel beitragen</h2>
+<p>Jedes Mini-Spiel liegt als eigener Ordner unter <code>games/&lt;name&gt;/</code> und wird über die <a href="./doc/index.html">Dokumentation</a> ins Hub eingebunden. Wie genau, beschreibt das Kapitel <a href="./doc/workflow/index.html">Workflow</a>.</p>
